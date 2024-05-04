@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.views.generic import ListView
+from .models import Post
 
-def posts_list(request):
-    return render(request, 'posts/index.html')
+
+class HomePageView(ListView):
+    model = Post
+    template_name = "posts/index.html"
