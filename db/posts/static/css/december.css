@@ -1,0 +1,546 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #999999;
+}
+li{
+	list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*                           Header                      */
+
+
+
+
+header{
+	width: 100%;
+	background-color: #111413;
+	display: flex;
+}
+
+.header__logo{
+	text-transform: uppercase;
+	color: black;
+	font-weight: 800;
+	font-size: 24px;
+	cursor: pointer;
+	margin-top: 60px;
+	margin-left: 12%;
+	opacity: 100%;
+	text-shadow:0 0 9px white;
+}
+
+.header__logo p:hover{
+    color: white;
+    font-weight: 900;
+    filter:
+    opacity: 150%;
+    drop-shadow(0px 0px 15px white);
+    text-shadow: 0 0 10px cyan, 0 0 15px cyan, 0 0 20px cyan, 0 0 35px cyan;
+}
+
+nav{
+	margin-top: 56px;
+	margin-left: 29%;
+
+}
+
+.topnav{
+    padding-left: 5px;
+}
+
+
+.topnav a{
+	color:#999999;
+	text-align:center;
+	padding: 5px 16px;
+	font-size: 15px;
+	filter: blur(1px);
+}
+.topnav a:hover{
+	border-bottom: 4px solid #1AF9D9;
+    color: #3ac9b7;
+    filter: blur(0px);
+    text-shadow: 0 0 5px cyan;
+}
+
+
+}
+
+/*                           Main                      */
+main{
+	display: flex
+	flex-direction: column;	
+	width: 100%;
+}
+.main_welcome{
+	background-color: #111413;
+	text-align: center; 
+	padding: 200px 0 410px 0;
+}
+
+.main_welcome p{
+	color: #fff;
+	font-size: 23px;
+}
+.main_welcome h1:after{
+	display: none;
+}
+.main_welcome {
+    color: #000000;
+}
+
+.welcomeTo {
+    color: #999999;
+
+}
+.welcomeTo:hover {
+    filter: blur(0px);
+}
+
+.MyPage {
+	color: #1AF9D9;
+
+}
+
+
+.MeetMe_button{
+    color: white;
+    border-color: #1AF9D9;
+    background: #111413;
+    border: 3;
+    margin-top: 150px;
+    padding: 1em 4em;
+    cursor: pointer;
+    transition: transform 1000ms;
+    border-radius: 5px;
+    font-weight: 900;
+    transform: box-shadow 0.3s;
+}
+
+.MeetMe_button:hover,
+.MeetMe_button:focus-visible{
+    transform: translateY(-1rem);
+    box-shadow: 0 0 10px cyan, 0 0 25px cyan, 0 0 35px cyan, 0 0 45px cyan;
+}
+
+
+.common_checkbox{
+
+}
+
+.box ul li{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    list-style: none;
+    opacity: 0;
+    background: radial-gradient(#3ac9b7, transparent, transparent);
+    bottom: 0;
+    left: 15vw;
+    animation: animate 3s linear infinite;
+}
+
+.box ul li:nth-child(2){
+    left: 37vw;
+    animation-delay: 2.4s;
+}
+
+.box ul li:nth-child(3){
+    left: 15vw;
+    animation-delay: 5s;
+}
+
+.box ul li:nth-child(4){
+    left: 60vw;
+    animation-delay:6s;
+}
+
+.box ul li:nth-child(5){
+    left: 75vw;
+    animation-delay:3s;
+
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+        bottom:0;
+    }100%{
+        transform: scale(10);
+        opacity: 1;
+        bottom: 60vh;
+    }
+}
+
+
+/*                       Секция с компьютером и About                   */
+
+
+
+
+.about{
+	font-weight: 800;
+	font-style: both;
+}
+.wrapper{
+	width: 100%;
+	margin: 0 auto;
+    background: #111413;
+}
+.main_about{
+	display: flex;
+    background: #111413;
+    padding: 111px 0 111px 0;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.about_right{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about_right h1{
+	display: inline-block;
+	padding-bottom: 4px;
+
+}
+.about_right p{
+	margin-top: 49px;
+	color:#898989;
+	text-align: justify;
+}
+.about_right ul{
+	color:#898989;
+	margin-top: 50px;
+
+}
+
+#qa_engineer{
+	border-radius: 20px;
+
+}
+
+.comment_input{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.comment_input p{
+    letter-spacing: 2px;
+    color: cyan;
+}
+
+
+.common_button{
+    color: white;
+    border-color: #1AF9D9;
+    background: #111413;
+    border: 3;
+    padding: 5px 176px;
+    cursor: pointer;
+    transition: transform 1000ms;
+    border-radius: 5px;
+    font-weight: 900;
+    transform: box-shadow 0.3s;
+}
+
+.comments{
+    max-width: 400px;
+}
+.comments p{
+    color: cyan;
+}
+
+.comments li{
+    color: cyan;
+}
+
+/*
+#qa_engineer:hover{
+    -webkit-filter: contrast(3);
+    filter: brightness(30);
+	transition: all 5s ease;
+}
+
+#qa_engineer:hover{
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+}
+*/
+
+/*                             Main team developers                         */
+
+
+
+.main_team{
+	background: #111413;
+	text-align: center;
+	padding: 101px 0 160px 0;
+	color:#fff;
+}
+.main_team h1{
+	font-size: 44px;
+	padding-bottom: 30px;
+}
+
+/*
+.line {
+	width: 100px;
+	height: 5px;
+	background-color: #D20003;
+	position: relative;
+	left:46%;
+	margin-bottom: 111px;
+}
+*/
+
+.photo1{
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	margin: 20px auto;  
+	overflow: hidden;
+
+}
+.photo2{
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	margin: 20px auto;  
+	overflow: hidden;
+}
+.photo3{
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	margin: 20px auto;  
+	overflow: hidden;
+}
+
+.team_cards{
+	display: flex;
+	 flex: 1 auto;
+}
+.card{
+	margin-left: 20px;
+}
+.name {
+	margin-bottom: 7px;
+}
+.position{
+	margin-bottom: 35px;
+	font-style: italic;
+}
+.about_position{
+	text-align;
+}
+
+/*       Our Services               */
+
+.main_services {
+	text-align: center;
+	padding: 100px 0 30px 0;
+}
+.services{
+	margin-bottom: 36px;
+}
+
+
+.main_services p{
+	margin-bottom: 100px;
+}
+.servises_cards{
+	text-align: center;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 20px;
+
+}
+.servises_card h4{
+	margin-bottom: 32px;
+}
+.servises_card p{
+	margin-bottom: 110px;
+	color:#000;
+}
+
+
+
+
+
+/*                         OUR    Clients                       */
+
+
+
+
+.main_clients{
+	background-color: #000;
+	padding: 105px 0 200px 0;
+	text-align: center;
+
+}
+.main_clients h1{
+	text-align: center;
+	color:#fff;
+	font-style: normal;
+	margin-bottom: 37px
+}
+.main_clients img{
+	margin-left: 35px;
+}
+
+/*  ек */
+.main_testimonials{
+	background-color: #000;
+	text-align: center;
+	color:#fff;
+	padding: 108px 0 178px 0;
+	
+	font-style: normal;
+}
+.main_testimonials h1{
+	text-transform: uppercase;
+	font-style: normal;
+	margin-bottom: 38px;
+
+}
+.main_testimonials p{
+	margin-bottom: 50px;
+}
+.testemonials{
+	text-transform: uppercase;
+	
+}
+
+.main_welcome{
+
+}
+
+
+
+/*                                   Galery                                */
+
+
+
+
+.main_work{
+	padding: 108px 0 105px 0;
+	
+
+}
+.main_work h1{
+	text-transform: uppercase;
+	font-style: normal;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.main_work p{
+	margin-top: 65px;
+	line-height: 22px;
+	font-style: normal;
+	margin-bottom: 185px;
+	color:#6c6c6c;
+	text-align: center;
+}
+.line2 img{
+	margin-left: 3px;
+}
+.main_work img:hover{
+	opacity: 0.9;
+}
+
+/*             Form Feedback                        */
+.contact_wrapper{
+	width: 760px;
+	margin: 0 auto;
+	color:#636363;
+	padding: 100px 0 100px 0;
+}
+.contact_wrapper h1{
+	text-transform: uppercase;
+	font-style: normal;
+	color:#000;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.red{
+	color:#F5253B;
+}
+input{
+	width: 360px;
+	height: 50px;
+	font-size: 20px;
+	margin-bottom: 30px;
+	margin-right: 24px;
+}
+input:first-of-type{
+
+}
+.form_inputs{
+	display: flex;
+}
+textarea{
+	width: 100%;
+	height: 163px;
+}
+input, textarea{
+	border:1PX solid #999999;
+	margin-top: 5px;
+}
+.button_block{
+	display: flex;
+	justify-content: flex-end;
+}
+input[type="submit"]{
+	height: 40px;
+	width: 166px;
+	background:#fcac45;
+	color:#fff;
+	margin-right: 0;
+	margin-top: 20px;
+}
+
+h1:after{
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	padding-top: 30px;
+	border-bottom: 3px solid #3ac9b7;
+}
+
+/*  social */
+footer{
+	width: 100%;
+	height: auto;
+	background: #222222;
+	padding: 30px 0 30px 0; 
+}
+.social {
+	display: flex;
+	justify-content: center;
+}
+.social img{
+	margin-left: 12px;
+}

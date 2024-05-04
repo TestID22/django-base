@@ -4,6 +4,8 @@ from .models import Post
 
 def index(request):
     context = {
-        "title" : "vitalii test"
+        "title" : "vitalii test",
+        "name" : ['dima', 'alex'],
+        "is_true" : False
     }
     return  render(request, "posts/index.html", context)

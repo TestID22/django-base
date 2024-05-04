@@ -1,13 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DB test</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="{% static "res/icon/icon4.png" %}" />
+	<title>Document</title>
+	<link rel="stylesheet"  href="{% static "css/december.css" %}" />
+	<link rel="stylesheet"  href="{% static "css/font-awesome.css" %}" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-    <p>{{ title }}</p>
+
+<!--                                           Header and Navigation                                      -->
+
+
+	<header>
+		<div class="header__logo"><p>Vitalii Sabadash</p></div>
+			<nav>
+				<div class="topnav" id="myTopnav">
+					<a href="#">Home</a>
+					<a href="#about_right">About ME</a>
+					<a href="https://github.com/TestID22">GitHub</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Contact</a>
+					<a href="https://github.com/TestID22"><img src="{% static "res/icon/github.jpg" %}" width="30" height="30"></a>
+				</div>
+			</nav>
+
+	</header>
+	<main>
+		<div class="main_welcome">
+			<h1><span class="welcomeTo">Welcome to </span><span class="MyPage">MY PAGE</span></h1>
+			<p> I am QA engineer</p>
+			<button class="MeetMe_button">Follow the white rabbit</button>
+		</div>
+
+		<!--animated backgroud-->
+		<div class="box">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+
+	</main>
+
+<!-- Main  -->
+
+		<div class="wrapper" id="about_right">
+			<div class="main_about">
+				<div class="about_left">
+					<img id="qa_engineer" src="{% static "res/img/photomain.jpg" %}" alt="computer" width="290" height="600">
+				</div>
+				<div class="comment_input">
+					<p>TO DO:</p>
+					<input type="text" placeholder="Input your task"><button class="common_button" onclick="addTask()">+</button>
+ 				</div>
+ 				<ul class="comments">
+					<li id="first">TODO LIST:</li>
+ 				</ul>
+			</div>
+		</div>
+	</main>
+
+
+
+<
+	<section class="contact_form">
+		<div class="contact_wrapper">
+			<h1>CONTUCT US</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<form action="#" name="newform" method="post">
+						<div class="form_inputs">
+							<p>Name <span class="red">*</span> <input type="text"></p>
+
+							<p>Email Adress <span class="red">*</span><input type="pass"></p>
+						</div>
+						<p>Message<span class="red">*</span></p>
+						<textarea name="text"></textarea>
+						<div class="button_block">
+							<input type="submit" value="SEND">
+						</div>
+					</form>
+		</div>
+
+
+	</section>
+ 	<footer>
+ 		<div class="wrapper">
+	 		<div class="social">
+	 			<img src="{% static "res/icon/vk.png" %}" alt="" width="31px" height="31px">
+	 			<img src="{% static "res/icon/yt.png" %}" alt="" width="31px" height="31px">
+	 			<img src="{% static "res/icon/twitter.png" %}" alt="" width="31px" height="31px">
+	 			<img src="{% static "res/icon/instagram.png" %}" alt="" width="31px" height="31px">
+	 			<img src="{% static "res/icon/skype.png" %}" alt="" width="31px" height="31px">
+	 		</div>
+ 		</div>
+ 	</footer>
+<!--  <audio autoplay="autoplay" src="audio/tema.mp3">Test</audio> -->
+	<script language="JavaScript" type="text/javascript" src="{% static "scripts/script.js" %}"></script>
+    <script src="{% static "scripts/code.jquery.com_jquery-3.7.1.min.js" %}"></script>
 </body>
 </html>
