@@ -38,12 +38,18 @@
 				<div class="about_left">
 					<img id="qa_engineer" src="{% static "res/img/photomain.jpg" %}" alt="computer" width="290" height="600">
 				</div>
-				<div class="comment_input">
-					<p>TO DO:</p>
-					<input type="text" placeholder="Input your task"><button class="common_button" onclick="addTask()">+</button>
- 				</div>
+				<!--todo: Add db saving -->
+				<form action="" method="post">{% csrf_token %}
+						<div class="comment_input">
+							<p>TO DO:</p>
+							{{ form }}
+							<button id="submit" type="submit" value="Submit">Submit</button> <!--TODO: Create CSS style for the button -->
+						</div>
+				</form>
+
  				<ul class="comments">
 					<li id="first">TODO LIST:</li>
+					<p class="output">{{ form.your_task.data }}</p>
  				</ul>
 			</div>
 		</div>
@@ -55,7 +61,6 @@
 					<form action="#" name="newform" method="post">
 						<div class="form_inputs">
 							<p>Name <span class="red">*</span> <input type="text"></p>
-
 							<p>Email Adress <span class="red">*</span><input type="pass"></p>
 						</div>
 						<p>Message<span class="red">*</span></p>
