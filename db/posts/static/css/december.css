@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sedan+SC&display=swap');
+
+
 *{
+    font-family: "Press Start 2P", system-ui;
 	margin: 0;
 	padding: 0;
+	font-weight: 100;
 }
 body{
-	font-family: 'Open Sans', sans-serif;
+
 }
 a{
 	text-decoration: none;
@@ -18,8 +23,6 @@ html{
 
 
 /*                           Header                      */
-
-
 
 
 header{
