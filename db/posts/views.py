@@ -6,6 +6,8 @@ from .forms import NameForm
 
 def index(request):
     form = NameForm()
+    posts = Post.objects.all()
+    print(posts[3])
     if request.method == "POST":
         post = Post()
         form = NameForm(request.POST)

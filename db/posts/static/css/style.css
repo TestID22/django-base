@@ -134,9 +134,7 @@ main{
     font-weight: 900;
     transform: box-shadow 0.3s;
 }
-.output p{
-    padding-top: 15px;
-}
+
 
 .MeetMe_button:hover,
 .MeetMe_button:focus-visible{
@@ -144,11 +142,13 @@ main{
     box-shadow: 0 0 10px cyan, 0 0 25px cyan, 0 0 35px cyan, 0 0 45px cyan;
 }
 
+.output{
+    padding-top: 15px;
+}
 
 .common_checkbox{
 
 }
-
 
 
 /*                       Секция с компьютером и About                   */
@@ -199,8 +199,8 @@ main{
 
 #qa_engineer{
 	border-radius: 20px;
-
 }
+
 
 .comment_input{
     text-align: center;
@@ -219,14 +219,15 @@ main{
 
 .common_button{
     color: white;
+    width: 110px;
     border-color: #1AF9D9;
     background: #111413;
+    padding: 15px;
     border: 3;
-    padding: 5px 176px;
     cursor: pointer;
     transition: transform 1000ms;
     border-radius: 5px;
-    font-weight: 900;
+    font-weight: 300;
     transform: box-shadow 0.3s;
 }
 
@@ -460,6 +461,7 @@ input{
 	font-size: 20px;
 	margin-bottom: 30px;
 	margin-right: 24px;
+	border-radius: 5px;
 }
 input:first-of-type{
 
@@ -479,14 +481,8 @@ input, textarea{
 	display: flex;
 	justify-content: flex-end;
 }
-input[type="submit"]{
-	height: 40px;
-	width: 166px;
-	background:#fcac45;
-	color:#fff;
-	margin-right: 0;
-	margin-top: 20px;
-}
+
+
 
 h1:after{
 	content: "";
@@ -495,6 +491,10 @@ h1:after{
 	width: 100px;
 	padding-top: 30px;
 	border-bottom: 3px solid #3ac9b7;
+}
+
+#MessageTextArea{
+    margin-bottom: 10px;
 }
 
 /*  social */
