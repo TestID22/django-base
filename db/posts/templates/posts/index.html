@@ -41,15 +41,15 @@
 				<form action="" method="post">{% csrf_token %}
 						<div class="comment_input">
 							<p>TO DO:</p>
-							{{ form }}
+							{{ form.as_p }}
 							<button class='common_button' type="submit" value="Submit">Submit</button>
 						</div>
 				</form>
  				<ul class="comments">
 					<li id="first">TODO LIST:</li>
-					<p class="output">{{ form.your_task.data }}</p>
-					<p class="output">{{ posts.id.0 }}</p>
-
+					{% for post in posts %}
+					<p class="output">{{ post }}</p>
+					{% endfor %}
  				</ul>
 			</div>
 		</div>
