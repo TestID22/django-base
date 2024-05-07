@@ -456,7 +456,7 @@ main{
 	color:#F5253B;
 }
 input{
-	width: 360px;
+	width: 377px;
 	height: 50px;
 	font-size: 20px;
 	margin-bottom: 30px;
@@ -483,7 +483,13 @@ input, textarea{
 	justify-content: flex-end;
 }
 
+#about_me{
+    padding-bottom: 20px;
+}
 
+#about_me p{
+    padding: 10px;
+}
 
 h1:after{
 	content: "";
