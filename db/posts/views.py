@@ -6,7 +6,7 @@ from .forms import NameForm
 
 def index(request):
     form = NameForm()
-    posts = Post.objects.all()
+    posts = Post.objects.all().order_by('-id')
     if request.method == "POST":
         post = Post()
         form = NameForm(request.POST)
@@ -14,3 +14,7 @@ def index(request):
         post.post = form.data['your_task'] #TODO: fix incorrect recroding in the DB
         post.save()
     return  render(request, "posts/index.html", {"form": form, "posts": posts }) #dont forget to add FORM for rendering
+
+
+
+
