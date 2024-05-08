@@ -481,6 +481,7 @@ input, textarea{
 .button_block{
 	display: flex;
 	justify-content: flex-end;
+	width: 783px;
 }
 
 #about_me{
