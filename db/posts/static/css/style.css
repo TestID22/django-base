@@ -71,7 +71,7 @@ nav{
 	color:#999999;
 	text-align:center;
 	padding: 5px 16px;
-	font-size: 10px;
+	font-size: 13px;
 	filter: blur(1px);
 }
 .topnav a:hover{
@@ -93,7 +93,7 @@ main{
 .main_welcome{
 	background-color: #111413;
 	text-align: center; 
-	padding: 200px 0 410px 0;
+	padding: 250px 0 210px 0;
 }
 
 .main_welcome p{
