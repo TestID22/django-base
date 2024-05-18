@@ -57,20 +57,17 @@
 	<section class="contact_form">
 		<div class="contact_wrapper">
 			<h1>CONTACT ME</h1>
-				<div id="about_me">
-					<p>Welcome to my website about testing! We are committed to ensuring the quality of your applications and protecting you from cyber threats in the digital world. We offer tutorials, testing tips, writing automation frameworks and tools to protect your online activity.</p>
+				<div id="about_me"> <!--Get data and record intp DB -->
+					<p>Welcome to my website about testing! I am committed to ensuring the quality of your applications and protecting you from cyber threats in the digital world. I offer tutorials, testing tips, writing automation frameworks and tools to protect your online activity.</p>
 				</div>
-					<form action="#" name="newform" method="post">
-						<div class="form_inputs">
-							<p>Name <span class="red">*</span> <input type="text"></p>
-							<p>Email Adress <span class="red">*</span><input type="pass"></p>
-						</div>
-						<p>Message<span class="red">*</span></p>
-						<textarea id='MessageTextArea' name="text"></textarea>
-						<div class="button_block">
-							<button class='common_button' type="submit" value="SEND"> SEND </button>
-						</div>
-					</form>
+					<div id="email_message">
+						<form action="" name="newform" method="post">{% csrf_token %}
+							{{ email_message_form }}
+							<div class="button_block">
+								<button class='common_button' type="submit" value="SEND"> SEND </button>
+							</div>
+						</form>
+					</div>
 		</div>
 	</section>
  	<footer>

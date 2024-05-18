@@ -50,8 +50,7 @@ header{
 .header__logo p:hover{
     color: white;
     font-weight: 900;
-    filter:
-    opacity: 150%;
+    opacity:150%;
     drop-shadow(0px 0px 15px white);
     text-shadow: 0 0 10px cyan, 0 0 15px cyan, 0 0 20px cyan, 0 0 35px cyan;
 }
@@ -82,7 +81,6 @@ nav{
 }
 
 
-}
 
 /*                           Main                      */
 main{
@@ -320,7 +318,6 @@ main{
 	font-style: italic;
 }
 .about_position{
-	text-align;
 }
 
 /*       Our Services               */
@@ -520,4 +517,8 @@ footer{
 }
 .social img{
 	margin-left: 12px;
+}
+
+#email_message{
+	display: block;
 }
